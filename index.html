@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tutorials Sabun 9 Langkah</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section>
+    <h1>Tutorial Sabun 9 Langkah</h1>
+    <ol>
+      <li>
+        <h3>Siapkan dulu bahannya, lalu copy file dan folder, seperti gambar dibawah</h3>
+        <img src="images/01.png" alt="langkah 1">
+        <p>*file bisa didownload disini : <a href="./files/kreasi_sabun.rar" download>kreasi sabun</a></p>
+        <p>*file yang saya gunakan di tutorial ini sudah saya sedikit modifikasi dari file yang diberikan pa Ramdhani
+        </p>
+      </li>
+      <li>
+        <h3>Pastekan file dan folder ke folder project tugas ksk kalian</h3>
+        <img src="images/02.png" alt="langkah 2">
+      </li>
+      <li>
+        <h3>Lalu edit file service.php di code editor favorit kalian (notepad++, sublime, VSCode, dsbg)</h3>
+        <img src="images/03.0.png" alt="langkah 3">
+      </li>
+      <li>
+        <h3>pada Fungsi connectDB() ubah host, username, password, nama database, dan pada Fungsi getTb() ubah nama
+          table
+          sesuai dengan pengaturan
+          database kalian</h3>
+        <img src="images/03.1.png" alt="langkah 4">
+        <p>*host, username dan password biasanya sama dengan gambar diatas jika masih pengembangan di localhost (ubah
+          jika
+          sudah di deploy / diupload / di hosting ke server kalian)</p>
+      </li>
+      <li>
+        <h3>pada Fungsi getTb() ubah sesuai dengan struktur table kalian</h3>
+        <img src="images/04.0.png" alt="langkah 5">
+        <p>*gambar diatas hanyalah contoh, struktur table bisa kalian liat di <a href="http://localhost/phpmyadmin/"
+            target="_blank">localhost/phpmyadmin</a></p>
+      </li>
+      <li>
+        <h3>pada Fungsi insertTb() ubah parameter fungsi, field dan nama_tabel sesuai dengan struktur table kalian.</h3>
+        <img src="images/05.0.png" alt="langkah 6">
+      </li>
+      <li>
+        <h3>pada Fungsi updateTb() lakukan hal yang hampir sama seperti pada langkah 5, perhatikan gambar</h3>
+        <img src="images/06.0.png" alt="langkah 6">
+        <p>*untuk lebih cepat, parameter fungsi bisa kalian <em>copy & paste</em> dari code parameter insertTb()</p>
+        <p>*bedanya dengan langkah 5: (nama_field1, nama_field2) VALUES ('param1', 'param2'), langkah 6: nama_field1 =
+          'param1'</p>
+        <p>*contoh lain : nama_karyawan = '". $nama_karyawan ."', gaji = '". $gaji ."' </p>
+      </li>
+      <li>
+        <h3>pada Fungsi deleteTb(), kalian cuma perlu mengubah 'id' (setelah WHERE, jika field primary key kalian
+          berbeda
+          dengan gambar) sesuai dengan nama field id / primary
+          key di struktur table kalian.</h3>
+        <img src="images/07.0.png" alt="langkah 7">
+        <p>*biasanya field id adalah field yang paling awal dan primary key, contoh : id_barang, kode_barang, nip, nik,
+          dsbg</p>
+      </li>
+      <li>
+        <h3>Terakhir, menambahkan nama kalian di $server->configureWSDL()</h3>
+        <img src="images/08.0.png" alt="langkah 8">
+        <p>*langkah ini cuma optional dan terserah kalian</p>
+        <p>*segala kesalahan / error adalah tanggung jawab masing-masing, dan saya cuma membagikan sedikit pengalaman
+          saya.</p>
+        <p>*jika ada yang kurang jelas, jangan sungkan untuk bertanya.</p>
+        <p>*pada Dosen tentunya (bukan dengan saya) :v</p>
+      </li>
+    </ol>
+  </section>
+
+  <footer>
+    Created in midnight by Al HasanDev &copy; 2019
+  </footer>
+</body>
+
+</html>

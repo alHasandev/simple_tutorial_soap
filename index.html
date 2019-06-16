@@ -5,13 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Tutorials Sabun 9 Langkah</title>
+  <title>Tutorial Sabun 10 Langkah</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <section>
-    <h1>Tutorial Sabun 9 Langkah</h1>
+    <h1>Tutorial Sabun 10 Langkah</h1>
     <ol>
       <li>
         <h3>Siapkan dulu bahannya, lalu copy file dan folder, seperti gambar dibawah</h3>
@@ -26,31 +26,31 @@
       </li>
       <li>
         <h3>Lalu edit file service.php di code editor favorit kalian (notepad++, sublime, VSCode, dsbg)</h3>
-        <img src="images/03.0.png" alt="langkah 3">
+        <img src="images/02.5.png" alt="langkah 3">
       </li>
       <li>
         <h3>pada Fungsi connectDB() ubah host, username, password, nama database, dan pada Fungsi getTb() ubah nama
           table
           sesuai dengan pengaturan
           database kalian</h3>
-        <img src="images/03.1.png" alt="langkah 4">
+        <img src="images/03.png" alt="langkah 4">
         <p>*host, username dan password biasanya sama dengan gambar diatas jika masih pengembangan di localhost (ubah
           jika
           sudah di deploy / diupload / di hosting ke server kalian)</p>
       </li>
       <li>
         <h3>pada Fungsi getTb() ubah sesuai dengan struktur table kalian</h3>
-        <img src="images/04.0.png" alt="langkah 5">
+        <img src="images/04.png" alt="langkah 5">
         <p>*gambar diatas hanyalah contoh, struktur table bisa kalian liat di <a href="http://localhost/phpmyadmin/"
             target="_blank">localhost/phpmyadmin</a></p>
       </li>
       <li>
         <h3>pada Fungsi insertTb() ubah parameter fungsi, field dan nama_tabel sesuai dengan struktur table kalian.</h3>
-        <img src="images/05.0.png" alt="langkah 6">
+        <img src="images/05.png" alt="langkah 6">
       </li>
       <li>
         <h3>pada Fungsi updateTb() lakukan hal yang hampir sama seperti pada langkah 5, perhatikan gambar</h3>
-        <img src="images/06.0.png" alt="langkah 6">
+        <img src="images/06.png" alt="langkah 7">
         <p>*untuk lebih cepat, parameter fungsi bisa kalian <em>copy & paste</em> dari code parameter insertTb()</p>
         <p>*bedanya dengan langkah 5: (nama_field1, nama_field2) VALUES ('param1', 'param2'), langkah 6: nama_field1 =
           'param1'</p>
@@ -61,18 +61,32 @@
           berbeda
           dengan gambar) sesuai dengan nama field id / primary
           key di struktur table kalian.</h3>
-        <img src="images/07.0.png" alt="langkah 7">
+        <img src="images/07.png" alt="langkah 8">
         <p>*biasanya field id adalah field yang paling awal dan primary key, contoh : id_barang, kode_barang, nip, nik,
           dsbg</p>
       </li>
       <li>
-        <h3>Terakhir, menambahkan nama kalian di $server->configureWSDL()</h3>
-        <img src="images/08.0.png" alt="langkah 8">
-        <p>*langkah ini cuma optional dan terserah kalian</p>
-        <p>*segala kesalahan / error adalah tanggung jawab masing-masing, dan saya cuma membagikan sedikit pengalaman
-          saya.</p>
+        <h3>Rombak code soap dan WSDL</h3>
+        <p>#Pada langkah ini, kalian bisa menambahkan nama kalian di $server->configureWSDL()</p>
+        <img src="images/08.0.png" alt="langkah 9">
+        <p>#Mengubah $server->wsdl->addcomplextype()</p>
+        <img src="images/08.1.png" alt="langkah 9.1">
+        <p>#Memperbaiki error : xmpl empty</p>
+        <img src="images/08.2.png" alt="langkah 9.2">
+        <p>
+          *segala kesalahan / error adalah tanggung jawab masing-masing, dan saya cuma membagikan sedikit
+          pengalamansaya.
+        </p>
         <p>*jika ada yang kurang jelas, jangan sungkan untuk bertanya.</p>
         <p>*pada Dosen tentunya (bukan dengan saya) :v</p>
+      </li>
+      <li>
+        <h3>Uji coba Request dan Response dari Web Service SOAP</h3>
+        <p>#sebenarnya ada cara lain untuk melakukan pengujian web service soap, tapi disin kit pakai cara simple yaitu
+          dengan membuat client web service kita sendiri :</p>
+        <img src="images/09.png" alt="langkah 10">
+        <p>*jika sdh seperti gambar diatas maka request dan response web service soap kamu telah berhasil !</p>
+        <p>*untuk melihat langkah pengujian menggunakan PostMan bisa diliat <a href="#">disini</a></p>
       </li>
     </ol>
 

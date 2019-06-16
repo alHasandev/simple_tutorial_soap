@@ -1,4 +1,4 @@
-<?php require("lib_soap/nusoap.php");
+<?php require("lib/nusoap.php");
 
 $client = new nusoap_client("http://localhost/tugas_ksk/service.php?wsdl");
 

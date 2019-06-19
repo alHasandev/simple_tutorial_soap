@@ -1,6 +1,6 @@
 <?php require("lib/nusoap.php");
 
-$client = new nusoap_client("http://localhost/tugas_ksk/service.php?wsdl");
+$client = new nusoap_client("http://localhost/tugas_ksk/service.php?wsdl"); // sesuai alamat service?wsdl kalian
 
 $response = $client->call("getTb", array()); //calling the registered method of the web service from client
 
